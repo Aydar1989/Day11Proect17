@@ -2,8 +2,8 @@
 #define DOOR_STRUCT_H
 
 struct door {
-  int id;
-  int status;
+    int id;
+    int status;
 };
 
 void initialize_doors(struct door *doors);
