@@ -45,9 +45,8 @@ void sort(struct door *doors) {
 
 void output(struct door *doors) {
     for (int i = 0; i < DOORS_COUNT; i++) {
-        printf("%d, %d\n", doors[i].id, doors[i].status);
-
-        if (i != DOORS_COUNT - 1) printf(" ");
+        printf("%d, %d", doors[i].id, doors[i].status);
+        if (i < DOORS_COUNT - 1) printf("\n");
     }
 }
 
